@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="angularYeomanApp">
+  <body ng-app="app">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -23,9 +23,9 @@
     <div class="container">
       <div ng-include=" 'header.tpl.html' "></div>
 
-      <div ui-view></div>
+      <div ui-view class="fadeInOut"></div>
 
-      <div ng-include=" 'footer.tpl.html' "></div>
+<!--      <div ng-include=" 'footer.tpl.html' "></div>-->
     </div>
 
 

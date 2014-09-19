@@ -1,0 +1,15 @@
+@import "../bower_components/animate.css/animate.min.scss";
+$fadeSpeed: .5s;
+.fadeInOut{position:absolute}
+.fadeInOut.ng-enter{
+-webkit-animation: fadeIn $fadeSpeed;
+-moz-animation: fadeIn $fadeSpeed;
+-ms-animation: fadeIn $fadeSpeed;
+ animation: fadeIn $fadeSpeed;
+}
+.fadeInOut.ng-leave{
+-webkit-animation: fadeOut $fadeSpeed;
+-moz-animation: fadeOut $fadeSpeed;
+-ms-animation: fadeOut $fadeSpeed;
+ animation: fadeOut $fadeSpeed;
+}

@@ -1,15 +1,5 @@
-'use strict';
-
-/**
- * @ngdoc overview
- * @name angularYeomanApp
- * @description
- * # angularYeomanApp
- *
- * Main module of the application.
- */
 angular
-  .module('angularYeomanApp', [
+  .module('app', [
     'ngAnimate',
     'ngCookies',
     'ngSanitize',
@@ -18,9 +8,9 @@ angular
     'angularMoment',
     'angular-lodash',
     'templates.app',
-    'angularYeomanApp.links',
-    'angularYeomanApp.main',
-    'yeomanAngularApp.http'
+    'NeteGreek.links',
+    'NeteGreek.main',
+    'NeteGreek.http'
   ])
   .config(function($stateProvider, $urlRouterProvider) {
     //

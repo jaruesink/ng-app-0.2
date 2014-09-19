@@ -1,13 +1,4 @@
-'use strict';
-
-/**
- * @ngdoc function
- * @name angularYeomanApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the main.tpl.html template
- */
-angular.module('angularYeomanApp.main', [])
+angular.module('NeteGreek.main', [])
   .controller('MainCtrl', function ($scope) {
 
     $scope.awesomeThings = [
