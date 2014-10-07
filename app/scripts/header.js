@@ -40,10 +40,10 @@ angular.module('NeteGreek.navigation', [])
                 $scope.sendingHelp='done';
                 })
                 .error(function(){console.log('error');
-                $scope.sendingHelp='broken';})
+                $scope.sendingHelp='broken';});
             }
             else{
             //do nothing
             }
-        }
+        };
 	});
