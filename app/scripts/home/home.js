@@ -1,5 +1,7 @@
-angular.module('NeteGreek.main', [])
-  .controller('MainCtrl', function ($scope) {
+'use strict';
+
+angular.module('NeteGreek.home', [])
+  .controller('HomeCtrl', function ($scope) {
 
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

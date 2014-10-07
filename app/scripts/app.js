@@ -1,3 +1,5 @@
+'use strict';
+
 angular
   .module('app', [
     'ngAnimate',
@@ -9,20 +11,21 @@ angular
     'angular-lodash',
     'templates.app',
     'NeteGreek.links',
-    'NeteGreek.main',
-    'NeteGreek.http'
+    'NeteGreek.home',
+    'NeteGreek.http',
+    'NeteGreek.navigation'
   ])
   .config(function($stateProvider, $urlRouterProvider) {
     //
     // For any unmatched url, redirect to /main
-    $urlRouterProvider.otherwise('/main');
+    $urlRouterProvider.otherwise('/home');
     //
     // Now set up the states
     $stateProvider
-      .state('main', {
-        url: '/main',
-        controller: 'MainCtrl',
-        templateUrl: 'main/main.tpl.html'
+      .state('home', {
+        url: '/home',
+        controller: 'HomeCtrl',
+        templateUrl: 'home/home.tpl.html'
       })
       .state('links', {
         url: '/links',
